@@ -73,7 +73,7 @@ enviarapp() {
 enviarpix() {
     ShellBot.answerCallbackQuery --callback_query_id ${callback_query_id[$id]} \
         --text "♻️ ENVIANDO CHAVE PIX, AGUARDE..."
-    ShellBot.sendDocument --chat_id ${callback_query_message_chat_id} \
+    ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
         --text "$(echo -e "🤩<b>CHAVE PIX ALEATÓRIA</b>🤩 \r\n<b>a5b85947-feaa-4e61-84e0-3a0de4de43c4</b>\r\n\r\n<b>MUITO OBRIGADO POR APOIAR ESSE PROJETO ❤️</b> ")" \
     --parse_mode html
     return 0
